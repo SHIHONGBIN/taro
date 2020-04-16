@@ -1,8 +1,14 @@
 
 import index from '../pages/index/model'
-import neiye from '../pages/neiye/model'
+import jk from '../pages/jk/model'
+import cj from '../pages/cj/model'
+import acount from '../pages/acount/model'
+import news from '../pages/news/model'
  
 export default [
     index,
-    neiye
+    jk,
+    cj,
+    acount,
+    news
 ]

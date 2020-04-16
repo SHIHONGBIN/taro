@@ -1,4 +1,4 @@
-import {getData} from './service'
+import {validateForm} from './service'
 
 
 export default {
@@ -6,15 +6,15 @@ export default {
   state: {
   },
   effects:{
-    *getData({payload}, { put, call, select }){
-      const res = yield call(getData, payload);
+    *validateForm({payload}, { put, call, select }){
+      const res = yield call(validateForm, payload);
       if(res){
         yield put({
           type:'changeData',
           payload:res.data
         })
       }
-      return res
+      return res.data
     }
   },
   reducers: {

@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
-import { connect } from 'dva'
+import { connect } from '@tarojs/redux'
 
 class Neiye extends Component {
 
@@ -16,13 +16,13 @@ class Neiye extends Component {
   componentDidHide () { }
 
   config = {
-    navigationBarTitleText: '内页'
+    navigationBarTitleText: '账户'
   }
 
   render () {
     return (
       <View className='index'>
-        <Text>Hello 内页!</Text>
+        <Text>Hello count!</Text>
       </View>
     )
   }

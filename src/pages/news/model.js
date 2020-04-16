@@ -1,5 +1,5 @@
 export default {
-  namespace: 'neiye',
+  namespace: 'news',
   state: [],
   reducers: {},
 };

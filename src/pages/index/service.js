@@ -8,8 +8,12 @@ function getData(params) {
     return requestAPI.get(url)
 }
 
-
+function validateForm(params) {
+  const url = '/api/user'
+  return requestAPI.post(url, params)
+}
 
 export {
-  getData
+  getData,
+  validateForm
 }

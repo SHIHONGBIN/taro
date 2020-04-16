@@ -3,7 +3,8 @@ import { HTTP_STATUS } from '../const/status'
 import { base } from '../config'
 import { logError } from './logError'
 
-const token = '522145'
+const token = 'ewqewqewqewqewqewqewq'
+// const token = localStorage.getItem('token')
 
 export default {
   baseOptions(params, method = 'GET') {
@@ -19,8 +20,7 @@ export default {
       url: base + url,
       data: data,
       method: method,
-      // header: { 'content-type': contentType, 'token': token },
-      header: { 'content-type': contentType},
+      headers: { 'content-type': contentType, 'token': token },
       success(res) {
         if (res.statusCode === HTTP_STATUS.NOT_FOUND) {
           return logError('api', '请求资源不存在')

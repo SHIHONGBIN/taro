@@ -10,6 +10,9 @@ const data= {
         username: 'kenny',
         sex: 6
     },
+    'POST /api/findPassWord': {
+        code:'200' 
+    }, 
     'POST /api/user': {
         id:Random.natural(1,3),
         code:'200' 

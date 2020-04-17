@@ -3,6 +3,17 @@ const isH5 = process.env.CLIENT_ENV = 'h5'
 const HOST = '"http://localhost:10086"';
 
 module.exports = {
+  weapp: {
+    module: {
+      postcss: {
+        // 小程序端样式引用本地资源内联
+        url: {
+          enable: true,
+          limit: 102400000000
+        }
+      }
+    }
+  },
   env: {
     NODE_ENV: '"development"',
     experimentalDecorators:true
@@ -12,7 +23,7 @@ module.exports = {
   },
   mini: {},
   h5: {
-    esnextModules: ['taro-ui'],
+
     devServer: {
       // 设置代理来解决 H5 请求的跨域问题
       proxy: {

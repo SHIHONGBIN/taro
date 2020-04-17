@@ -4,7 +4,6 @@ import { AtActivityIndicator, AtInput, AtForm,AtButton, AtToast  } from "taro-ui
 import "./index.scss";
 import { connect } from "@tarojs/redux";
 import logo from './../../../public/images/logo.png'
-import './index.scss'
 
 @connect(({ index, loading }) => ({
   index,
@@ -131,7 +130,9 @@ export default class Index extends Component {
                 onChange={this.handleChangePassWord.bind(this)}
               />
               <View className='formIndexAction'>
-                <View>忘记密码</View>
+                <View onClick={()=>Taro.navigateTo({
+                  url:'../acount/findpassword/index'
+                })}>忘记密码</View>
                 <View>没有账号？注册</View>
               </View>
                <AtButton formType='submit' className='submitbtn'disabled={(this.state.value1.trim()!=''&&this.state.value2.trim()!='')?false:true}>登录</AtButton>

@@ -62,31 +62,31 @@ class App extends Component {
       backgroundColor:'#000000',
       list:[
         {
-          pagePath:'pages/index/index',
+          pagePath:'/pages/index/index',
           text:'首页',
           iconPath:'../public/images/home1.png',
           selectedIconPath:'../public/images/home.png'
         },
         {
-          pagePath:'pages/cj/index',
+          pagePath:'/pages/cj/index',
           text:'出借',
           iconPath:'../public/images/cj1.png',
           selectedIconPath:'../public/images/cj.png'
         },
         {
-          pagePath:'pages/jk/index',
+          pagePath:'/pages/jk/index',
           text:'借款',
           iconPath:'../public/images/jk1.png',
           selectedIconPath:'../public/images/jk.png'
         },
         {
-          pagePath:'pages/acount/index',
+          pagePath:'/pages/acount/index',
           text:'账户',
           iconPath:'../public/images/acount1.png',
           selectedIconPath:'../public/images/acount.png'
         },
         {
-          pagePath:'pages/news/index',
+          pagePath:'/pages/news/index',
           text:'资讯',
           iconPath:'../public/images/news1.png',
           selectedIconPath:'../public/images/news.png'

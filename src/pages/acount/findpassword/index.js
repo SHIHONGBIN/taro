@@ -54,7 +54,7 @@ class FindPassWord extends Component {
           hasMask='true'
           />
         ) : ""}
-          <View className='indexBox'>
+          <View className='indexBox indexBox2'>
             <img src={logo} style={{display:'block', textAlign:'center', margin:'7vh auto'}} />
             <AtForm
              onSubmit={this.onSubmit.bind(this)}

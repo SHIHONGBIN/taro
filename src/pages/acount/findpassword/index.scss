@@ -1,10 +1,12 @@
-.formIndexAction{
-  display: flex;
-  margin: 1rem 15px;color:#666;
-  *{flex: 1; font-size: .6rem;}
-  *:last-child{text-align: right;}
+.indexBox2{
+  .formIndexAction{
+    display: flex;
+    margin: 1rem 15px;color:#666;
+    *{flex: 1; font-size: .6rem;}
+    *:last-child{text-align: right;}
+  }
+  .indexBox{ margin:  0 1rem;}
+  .at-form .at-input{margin: 0;}
+  .at-form::after{display: none}
+  .submitbtn{ background-color: green; color:#fff; font-size: .68rem; border: none;}
 }
-.indexBox{ margin:  0 1rem;}
-.at-form .at-input{margin: 0;}
-.at-form::after{display: none}
-.submitbtn{ background-color: green; color:#fff; font-size: .68rem; border: none;}

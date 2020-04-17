@@ -36,6 +36,7 @@ export default {
         logError('api', '请求接口出现问题', e)
       }
     }
+    console.log(option)
     return Taro.request(option)
   },
   get(url, data = '') {

@@ -131,7 +131,7 @@ export default class Index extends Component {
               />
               <View className='formIndexAction'>
                 <View onClick={()=>Taro.navigateTo({
-                  url:'../acount/findpassword/index'
+                  url:'/pages/acount/findpassword/index'
                 })}>忘记密码</View>
                 <View>没有账号？注册</View>
               </View>
